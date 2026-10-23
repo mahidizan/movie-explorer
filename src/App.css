@@ -1,0 +1,81 @@
+/* main page */
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* search */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* movie grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/* movie cards */
+.card {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* no poster */
+.no-poster {
+  aspect-ratio: 2 / 3;
+  display: grid;
+  place-items: center;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+/* movie details */
+.details {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* error message */
+.error {
+  color: crimson;
+}
+
+/* load more */
+.load-more {
+  display: block;
+  margin: 20px auto;
+}
+
+/* phone */
+@media screen and (max-width: 450px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}
